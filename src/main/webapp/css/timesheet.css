@@ -1,0 +1,43 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-Jan-2015, 20:57:03
+    Author     : seamus
+*/
+
+#myTable1 {
+   // font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family:"Times New Roman";
+    width: 80%;
+    border-collapse: collapse;
+}
+
+#myTable1 th {
+    // font-family:"Times New Roman";
+    font-size: 1em;
+    color:  #000000;
+    text-align: center;
+   // background-color: #A9D0F5;
+   //background-color:#cccccc;
+   // background: -moz-linear-gradient(#FFFFFF ,#A4A4A4 );
+   
+   background: -moz-linear-gradient( grey,white );
+    border-top:1px solid #BBBBBB;
+}
+
+#myTable1 td { 
+    font-family:"Times New Roman";
+    
+    font-size: 1em;
+   text-align:center;
+  // background-color: #ffffff;
+ background: -moz-linear-gradient(beige, white);
+ // background-color:beige;#BED6F8
+ //background: -moz-linear-gradient(#bed6f8, white);
+	border-bottom:1px solid #BBBBBB;
+	padding:2px;
+}
+

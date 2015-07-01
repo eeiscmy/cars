@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <script type="text/javascript">
+            var url = "/CarRestExample/webresources/broadcast";
+            var source=new EventSource(url);
+               source.addEventListener(
+                  "message-to-client",
+                   function(event){
+                       console.log(event.data);
+            document.getElementById("result").innerHTML+=event.data; },
+                false);
+        </script>
+        
+    </head>
+    <body>
+        <h1>Receiving events via Server Sent Events (SSE)....</h1>
+        
+        
+        
+        <table border="1" id="result">
+            <thead>
+            <tr><th>Id</th><th>Make</th><th>Model</th></tr>
+            </thead>
+            
+            <tbody>
+                
+            </tbody>
+        </table>
+    </body>
+</html>
